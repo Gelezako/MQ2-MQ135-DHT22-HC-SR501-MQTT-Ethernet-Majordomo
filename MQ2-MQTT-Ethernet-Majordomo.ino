@@ -99,7 +99,7 @@ void loop()
         delay(1000);
   }
 
-  if (client.connect("MQ2Client", "jthjoimh", "T-KYqa3mDF8v"))
+  if (client.connect("MQ2Client", "login", "password"))
   {
       // Преобразуем переменные для отправки в MQTT в Брокер
       static char char_mq2[10];      // Переменная для перевода из int в char
