@@ -8,3 +8,6 @@ https://github.com/Gelezako/MajorDomo-Scenarios/blob/master/onNewHour/AutoAlertM
 
 Реализация озвучивания команды
 https://github.com/Gelezako/MajorDomo-Scenarios/blob/master/MQ2.php
+
+Демонстрация применения и видео инструкция по настройке
+https://www.youtube.com/watch?v=mB0fdDYdvEI
