@@ -5,3 +5,6 @@
 
 После привязки полученных значений в Majordomo для проверки срабатывания превышения порога концентрации природного газа необходимо зайти Объекты=>Timer=>onNewHour и вставить код:
 https://github.com/Gelezako/MajorDomo-Scenarios/blob/master/onNewHour/AutoAlertMQ2.php
+
+Реализация озвучивания команды
+https://github.com/Gelezako/MajorDomo-Scenarios/blob/master/MQ2.php
