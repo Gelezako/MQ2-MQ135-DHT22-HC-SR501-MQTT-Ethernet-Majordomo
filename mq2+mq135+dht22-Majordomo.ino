@@ -125,7 +125,7 @@ void loop()
 
   
 
-  if (client.connect("MQClient", "jthjoimh", "T-KYqa3mDF8v"))
+  if (client.connect("MQClient", "login", "password"))
   {
       static char char_mq2[10];
       static char char_mq135[10];
@@ -139,7 +139,7 @@ void loop()
   }
   else {  Serial.println("disconect");}
 
-    if (client.connect("DHT22Client", "jthjoimh", "T-KYqa3mDF8v"))
+    if (client.connect("DHT22Client", "login", "password"))
   {
       static char char_dht22h[10];      
       static char char_dht22t[10];  
