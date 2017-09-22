@@ -54,6 +54,7 @@ void loop() {
       Serial.println("publish");
       client.publish("data/HCSR501", char_hc);
       client.disconnect();
+      delay(300000); //sleep 5 min
       }
   else {  Serial.println("disconnect");}
   }
