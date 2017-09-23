@@ -56,12 +56,8 @@ void loop() {
       client.disconnect();
       delay(300000); //sleep 5 min
       }
-  else {  Serial.println("disconnect");}
-  }
-  else
-  {
+  else {  
     digitalWrite(LedPin,LOW);
-  }
-  
-   
+    Serial.println("disconnect");}
+  }   
 }
