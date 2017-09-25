@@ -37,21 +37,23 @@ void setup() {
 }
 
 void loop() {
+  digitalWrite(LedPin,LOW);
   int sensorValue = digitalRead(pin); 
   Serial.print("move =  ");
   Serial.println(sensorValue);
 
   if(sensorValue == HIGH)
   {
-    digitalWrite(LedPin, HIGH);
      if (client.connect("hcClient", "login", "password"))
       {
-      static char char_hc[10];
-      dtostrf(sensorValue, 3, 0, char_hc);
+      //static char char_hc[10];
+      //dtostrf(sensorValue, 3, 0, char_hc);
       Serial.println("publish");
-      client.publish("data/HCSR501", char_hc);
+      digitalWrite(LedPin, HIGH);
+      //client.publish("data/HCSR501", char_hc);
+      client.publish("data/HCSR501", sensorValue ? "1" : "0");
       client.disconnect();
-      delay(300000); //sleep 5 min
+      delay(10000); //sleep 1 min
       }
   else {  
     digitalWrite(LedPin,LOW);
