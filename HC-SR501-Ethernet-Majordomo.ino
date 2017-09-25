@@ -28,10 +28,7 @@ PubSubClient client(server, 13977, callback, ethClient);
 
 void callback(char* topic, byte* payload, unsigned int length)
 {
-  byte* p = (byte*)malloc(length);
-  memcpy(p, payload, length);
-  client.publish("data/HCSR501", p, length);
-  free(p);
+  client.publish("data/HCSR501", payload, length);
 }
 
 void setup() {
