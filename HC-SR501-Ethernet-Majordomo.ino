@@ -9,13 +9,13 @@
   Скетч определяет движение и отправки их по MQTT в брокер и MajorDoMo.
 */
 
-include <SPI.h>                 // Библиотека SPI шины
-include <UIPEthernet.h>          // Ethernet библиотека
-include <PubSubClient.h>        // Библиотека MQTT
+#include <SPI.h>                 // Библиотека SPI шины
+#include <UIPEthernet.h>          // Ethernet библиотека
+#include <PubSubClient.h>        // Библиотека MQTT
 
 int sensorValue = 0;
-define pin 4
-define LedPin 13
+#define pin 4
+#define LedPin 13
 
 byte mac[]    = { 0x00, 0xAA, 0xBB, 0xCC, 0xDA, 0x02 };
 IPAddress ip{192, 168, 0, 80};
